@@ -2,7 +2,7 @@
  * @Author: error: git config user.name && git config user.email & please set dead value or install git
  * @Date: 2022-12-05 17:25:22
  * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
- * @LastEditTime: 2022-12-05 17:36:27
+ * @LastEditTime: 2022-12-05 20:51:28
  * @FilePath: /react18-webpack-ts/craco.config.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -26,7 +26,9 @@ module.exports = {
                     libraryName: 'antd',
                     libraryDirectory: 'es',
                     //style为true即是less,设置了主题自定义需要改为true
-                    style: 'css',
+                    // style: 'css',
+                    style: 'true',
+
                 },
             ],
         ],
