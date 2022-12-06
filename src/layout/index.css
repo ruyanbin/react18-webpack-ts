@@ -4,3 +4,8 @@
 :where(.css-dev-only-do-not-override-1ij74fp).ant-layout .ant-layout-sider{
     background: #fff;
 }
+.layout-header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

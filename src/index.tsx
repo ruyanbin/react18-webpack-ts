@@ -1,8 +1,8 @@
 /*
  * @Author: error: git config user.name && git config user.email & please set dead value or install git
  * @Date: 2022-12-05 16:57:04
- * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
- * @LastEditTime: 2022-12-05 21:42:20
+ * @LastEditors: ru ru@qq.com
+ * @LastEditTime: 2022-12-06 16:12:47
  * @FilePath: /react18-webpack-ts/src/index.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -17,11 +17,11 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
-    <React.StrictMode>
+    // <React.StrictMode>
         <BrowserRouter>
             <App />
         </BrowserRouter>
-    </React.StrictMode>,
+    // </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function

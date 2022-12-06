@@ -1,5 +1,10 @@
 
 {
     "hello":"您好",
-    "world":"世界"
+    "world":"世界",
+    "router":{
+        "home":"首页",
+        "basic":"基础管理",
+        "echarts":"图表"
+    }
 }

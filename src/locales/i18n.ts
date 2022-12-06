@@ -1,8 +1,8 @@
 /*
  * @Author: error: git config user.name && git config user.email & please set dead value or install git
  * @Date: 2022-12-06 10:23:03
- * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
- * @LastEditTime: 2022-12-06 10:28:37
+ * @LastEditors: ru ru@qq.com
+ * @LastEditTime: 2022-12-06 16:26:02
  * @FilePath: /react18-webpack-ts/src/locales/i18n.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -25,7 +25,7 @@ i18n
     },
   },
   //默认语言
-  fallbackLng: "zh",
+  fallbackLng: "en",
   debug: false,
   interpolation: {
     escapeValue: false,
