@@ -2,11 +2,11 @@
  * @Author: error: git config user.name && git config user.email & please set dead value or install git
  * @Date: 2022-12-05 21:45:45
  * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
- * @LastEditTime: 2022-12-05 22:02:00
+ * @LastEditTime: 2022-12-06 09:49:50
  * @FilePath: /react18-webpack-ts/src/layout/component/Menu.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
-import React, { FC } from 'react';
+import React, { FC, useState,createRef } from 'react';
 import {
   AppstoreOutlined,
   ContainerOutlined,
@@ -50,20 +50,23 @@ const items: MenuItem[] = [
       getItem('Submenu', 'sub3', null, [getItem('Option 11', '11'), getItem('Option 12', '12')]),
     ]),
   ];
-  
-const MenuComponent:FC=()=>{
-    return (
 
-         <div>
+const MenuComponent:FC=()=>{
+  const [key,setKey]=useState([])
+  // const menuRef=createRef()
+  const onMenuClick=({ item, key, keyPath, domEvent }:any)=>{
+  console.log(item, key, keyPath, domEvent,'event')
+  setKey(key)
+  }
+    return (
       <Menu
-        defaultSelectedKeys={['1']}
+
+        defaultSelectedKeys={key}
         defaultOpenKeys={['sub1']}
         mode="inline"
-        // theme="dark"
-   
+        onClick={onMenuClick}
         items={items}
       />
-    </div>
     )
 }
 
